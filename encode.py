@@ -18,14 +18,13 @@ def encrypt (original_text, shift_amount):
  cipher_text =""
  for letter in original_text:
     shifted_position = alphabet.index(letter)+ shift_amount
-
-    shifted_position %= len(alphabet) # TODO-4: What happens if you try to shift z forwards by 9? Can you fix the code?
+    # TODO-4: What happens if you try to shift z forwards by 9? Can you fix the code?
+    shifted_position %= len(alphabet)
     cipher_text += alphabet[shifted_position ]
  print(cipher_text)
-#
-#
+
 # # TODO-3: Call the 'encrypt()' function and pass in the user inputs. You should be able to test the code and encrypt a
 # #  message.
 
- encrypt(original_text=text, shift_amount=shift)
+encrypt(original_text=text, shift_amount=shift)
 
