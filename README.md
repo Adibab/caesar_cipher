@@ -10,5 +10,4 @@ This is a simple implementation of the **Caesar Cipher encryption and decryption
 - Works with uppercase and lowercase letters
 - Ignores non-alphabet characters (e.g., punctuation, spaces)
 
-## 📁 Project Structure
 
